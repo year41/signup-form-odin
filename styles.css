@@ -154,6 +154,15 @@ body {
     color: white;
     font-size: 1rem;
     letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #52b9ed;
+}
+
+.btn:active {
+    background-color: #3a8ab3;
 }
 
 .button-container p {
