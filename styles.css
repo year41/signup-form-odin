@@ -87,11 +87,15 @@ body {
 }
 
 .description {
-    padding: 130px 90px 40px 30px;
-    background-color: #f9fcff;
+    height: 34%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 155px 130px 0 35px;
+    background-color: #f6fbff;
 }
 
 .form {
+    height: 32%;
     background-color: #fefefe;
     padding: 15px 100px 10px 30px;
 }
@@ -112,6 +116,7 @@ body {
 }
 
 .button-container {
+    height: 34%;
     padding: 28px 30px ;
     background-color: #f9fcff;
 }
