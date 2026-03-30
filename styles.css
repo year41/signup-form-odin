@@ -128,10 +128,14 @@ body {
     font-size: 0.9rem;
 }
 
+.form-row input[type="password"]:invalid {
+    border: 1px solid rgb(197, 0, 0);
+}
+
 .button-container {
     height: 34%;
-    padding: 28px 30px;
-    background-color: #f9fcff;
+    padding: 28px 35px;
+    background-color: #f6fbff;
 }
 
 .btn {
