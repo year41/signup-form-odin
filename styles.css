@@ -126,6 +126,13 @@ body {
 .form-row input {
     padding: 3px 7px;
     font-size: 0.9rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+.form-row input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 1px 3px #888888;
 }
 
 .form-row input[type="password"]:invalid {
