@@ -51,10 +51,10 @@ body {
 .header div {
     font-family: Norse;
     font-size: 3rem;
-    margin-top: 200px;
+    margin-top: 180px;
     padding: 15px 0;
     height: 145px;
-    background-color: rgb(0, 0, 0, 0.1);
+    /* background-color: rgb(0, 0, 0, 0.1); */
     display: flex;
     justify-content: center;
     align-items: center;
