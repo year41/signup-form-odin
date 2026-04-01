@@ -230,4 +230,12 @@ body {
     position: absolute;
     top: 10px;
     left: 655px;
+    display: var(--day-image);
+}
+
+.theme-color .light {
+    position: absolute;
+    top: 10px;
+    left: 655px;
+    display: var(--night-image);
 }
