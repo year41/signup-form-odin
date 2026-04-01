@@ -17,11 +17,19 @@
 }
 
 :root.light {
-    --title-color: #2dffa1;
+    --bg-color: #598baf;
+    --title-color: #ececec;
+    --logo-color: invert(0.05);
+    --foot-color: #eee;
+    --night-image: none;
 }
 
 :root.dark {
-    --title-color: #ff0000;
+    --bg-color: black;
+    --title-color: #4a4a4a;
+    --logo-color: invert(0.8);
+    --foot-color: #aaa;
+    --day-image: none;
 }
 
 * {
@@ -31,9 +39,7 @@
 }
 
 body {
-    /* background-color: rgb(243, 251, 255); */
-    /* bg color black temporarily until finish the layout */
-    background-color: black;
+    background-color: var(--bg-color);
     font-family: Helvetica, Arial,  sans-serif;
     font-size: 16px;
     height: 100vh;
@@ -46,6 +52,14 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.header .day {
+    display: var(--day-image);
+}
+
+.header .night {
+    display: var(--night-image);
 }
 
 .header .background {
@@ -71,22 +85,23 @@ body {
 .logo {
     height: 100%;
     object-fit: contain;
+    filter: var(--logo-color);
 }
 
 .title {
     color: var(--title-color);
 }
 
-.header .day {
+.header .foot {
     margin-top: auto;
     margin-bottom: 13px;
     font-size: 0.7rem;
     align-self: center;
-    color: #eee;
+    color: var(--foot-color);
 }
 
 .header a {
-    color: #eee;
+    color: var(--foot-color);
     text-decoration: none;
 }
 

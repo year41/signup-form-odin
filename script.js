@@ -3,6 +3,7 @@ function systemTheme() {
     const mode = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const newTheme =  mode ? "dark" : "light";
     root.className = newTheme;
+    root.className = "light"; //editing light-mode for now choosing color and all
 }
 
 function setTheme() {
