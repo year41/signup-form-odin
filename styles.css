@@ -17,7 +17,7 @@
 }
 
 :root.light {
-    --bg-color: #202020;
+    --bg-color: #dfdfdf;
     --title-color: #ececec;
     --logo-color: invert(0.05);
     --highlight-box: rgba(0, 0, 0, 0.08);
