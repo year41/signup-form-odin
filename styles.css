@@ -17,19 +17,35 @@
 }
 
 :root.light {
-    --bg-color: #598baf;
+    --bg-color: #202020;
     --title-color: #ececec;
     --logo-color: invert(0.05);
+    --highlight-box: rgba(0, 0, 0, 0.08);
     --foot-color: #eee;
     --night-image: none;
+    --bg-color-boxes: #f6fbff;
+    --bg-form-color: #fefefe;
+    --btn-color: #598baf;
+    --btn-hover: #80aac8;
+    --btn-active: #3a8ab3;
+    --btn-text: #fff;
+
 }
 
 :root.dark {
     --bg-color: black;
     --title-color: #4a4a4a;
     --logo-color: invert(0.8);
+    /* --highlight-box: rgba(255, 255, 255, 0.1); */
     --foot-color: #aaa;
     --day-image: none;
+    --bg-color-boxes: #a0a5aa;
+    --bg-form-color: #ededed;
+    --btn-color: ;
+    --btn-hover: ;
+    --btn-active: ;
+    --btn-text: white;
+
 }
 
 * {
@@ -76,7 +92,7 @@ body {
     margin-top: 180px;
     padding: 15px 0;
     height: 145px;
-    /* background-color: rgb(0, 0, 0, 0.1); */
+    background-color: var(--highlight-box);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +130,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     padding: 155px 80px 0 35px;
-    background-color: #f6fbff;
+    background-color: var(--bg-color-boxes);
 }
 
 .form {
@@ -122,7 +138,7 @@ body {
     font-size: 1.2rem;
     font-weight: 550;
     color: #232323;
-    background-color: #fefefe;
+    background-color: var(--bg-form-color);
     position: relative;
     padding: 40px 120px 0 35px;
     box-shadow: 0px 3px 8px -4px #888888;
@@ -165,7 +181,7 @@ body {
 .button-container {
     height: 34%;
     padding: 30px 35px;
-    background-color: #f6fbff;
+    background-color: var(--bg-color-boxes);
 }
 
 .btn {
@@ -173,19 +189,19 @@ body {
     padding: 8px 35px;
     border-radius: 7px;
     border: none;
-    background-color: #3a8ab3;
-    color: white;
+    background-color: var(--btn-color);
+    color: var(--btn-text);
     font-size: 1rem;
     letter-spacing: 0.5px;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #52b9ed;
+    background-color: var(--btn-hover);
 }
 
 .btn:active {
-    background-color: #3a8ab3;
+    background-color: var(--btn-active);
 }
 
 .button-container p {
@@ -194,7 +210,7 @@ body {
 
 .button-container a {
     text-decoration: none;
-    color: #3a8ab3;
+    color: var(--btn-color);
     font-weight: 600;
 }
 
